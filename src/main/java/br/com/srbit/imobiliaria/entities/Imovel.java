@@ -9,10 +9,11 @@ import org.springframework.data.cassandra.core.mapping.Column;
 import org.springframework.data.cassandra.core.mapping.PrimaryKey;
 import org.springframework.data.cassandra.core.mapping.Table;
 
+import java.io.Serializable;
 import java.util.UUID;
 
 @Table(value = "tb_imovel")
-public class Imovel {
+public class Imovel implements Serializable {
     @Id
     @PrimaryKey
     private UUID id;

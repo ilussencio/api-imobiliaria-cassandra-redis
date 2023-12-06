@@ -9,9 +9,10 @@ spring:
     schema-action: CREATE_IF_NOT_EXISTS
   cache:
     type: redis
-  redis:
-    host: 192.168.100.27
-    port: 6379
-    serializer: org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer
+  data:
+    redis:
+      host: 192.168.100.27
+      port: 6379
+      serializer: org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer
 server:
   port: 8080
